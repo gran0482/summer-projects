@@ -90,7 +90,7 @@ a{
     height: 50px;
     background-color: #000000;
     border: none;
-    width: 85%;
+    width: 95%;
 }
 a.nav-link{
     display: flex;
@@ -142,10 +142,6 @@ a.nav-link:hover{
 .logo{
     margin-left: 95px; 
     width: 65%;
-}
-/* making the toggler match the theme of the website */
-.navbar-toggler{
-    background-color: var(--text-color);
 }
 /* making the helicopter image responsive through all the different states */
 .helicopter-image{
@@ -428,10 +424,10 @@ footer{
     margin-bottom: 50px;
     border: none;
     background-color: var(--secondadry-color);
-    padding-right: 40px;
-    padding-left: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border-radius: 75px;
     font-size: 1.5rem;
     color: var(--text-white);
@@ -445,7 +441,7 @@ footer{
     animation-iteration-count: infinite;
 }
 @keyframes grow{
-    50% {transform: scale(1.5);}
+    50% {transform: scale(1.2);}
 }
 /*--------------------------------------------
              Tablet Styles
