@@ -55,8 +55,8 @@ html{
 /* colours that are used throughout the website */
 :root{
 	--primary-color: #ffffff;
-	--secondadry-color: #119DA4;
-	--text-color: grey;
+	--secondadry-color: #C57B57;
+	--text-color: #000000;
     --text-white: #ffffff;
 	}
  /* removing the underline from the links to allow for proper styling */
@@ -85,9 +85,17 @@ a{
     background-color: var(--primary-color);
 }
 .hr{
-    height: 12px;
+    height: 50px;
+    background-color: #000000;
+    border: none;
+    width: 85%;
 }
-
+a.nav-link{
+    display: flex;
+}
+a.nav-link:hover{
+    color: var(--secondadry-color);
+}
 /* making my profile picture responsive */
 .profile-pic{
     width: 100%;
