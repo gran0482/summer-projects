@@ -83,6 +83,19 @@ a{
     width: 100%;
     height: auto;
 }
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.nav-hover{
+    color: var(--text-color);
+    font-size: 2.5rem;
+}
+.nav-hover:hover{
+    color: var(--secondadry-color);
+}
  /*--------------------------------------------
              Mobile Styles - Landing
  -----------------------------------------------*/
@@ -95,13 +108,6 @@ a{
     background-color: #000000;
     border: none;
     width: 95%;
-}
-.nav-link{
-  color: var(--text-color);
-  font-size: 1.75rem;
-}
-.nav-link:hover{
-    color: var(--secondadry-color);
 }
 /* making my profile picture responsive */
 .profile-pic{
@@ -125,12 +131,13 @@ a{
 /* Making the button look visually appealing */
 .welcome{
     background-color: var(--secondadry-color);
+    color: var(--primary-color);
     font-size: 2rem;
     margin-left: 120px;
     margin-top: 30px;
     margin-bottom: 15px;
     padding-top: 15px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     padding-left: 50px;
     padding-right: 50px; 
     border-radius: 85px;
@@ -705,10 +712,6 @@ footer{
     }
     .mb-2:nth-child(4){
         grid-area: four;
-    }
-    /* making the button interactive for the user */
-    .button:hover{
-        background-color: var(--primary-color);
     }
     /* avoiding the feilds from touching each other */
     .first-name, .email{
