@@ -58,6 +58,8 @@ html{
 	--secondadry-color: #C57B57;
 	--text-color: #000000;
     --text-white: #ffffff;
+    --hover-states: #6b818c;
+    --card-color: #C57B57
 	}
  /* removing the underline from the links to allow for proper styling */
 a{
@@ -126,13 +128,12 @@ a.nav-link:hover{
     padding-bottom: 30px;
     padding-left: 55px;
     padding-right: 55px; 
-    border-radius: 55px;
+    border-radius: 85px;
     border: none;
 }
-
 /* adding hover states to make it more interactive for the user */
 .welcome:hover{
-    background-color: var(--text-color);
+    background-color: var(--hover-states);
 }
 /*--------------------------------------------
              Mobile Styles - Home
@@ -198,26 +199,20 @@ a.nav-link:hover{
     height: 80px;
     margin-bottom: 50px;
     margin-top: 45px; 
-    background-color: var(--primary-color);
-    color: var(--secondadry-color);
+    background-color: var(--secondadry-color);
+    color: var(--text-white);
     font-size: 2rem;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 55px;
-    padding-right: 55px ;
+    padding-top: 8px;
+    padding-bottom: 25px;
+    padding-left: 45px;
+    padding-right: 45px ;
     border-radius: 55px;
     border: none;
     text-decoration: none;
 } 
 /* adding an animation to make it more engaging for the user */
 .button-home:hover{
-    color: var(--secondadry-color); 
-    animation-name: about-transition;
-    animation-duration: 2s;
-}
-@keyframes about-transition{
-    from {background-color: var(--primary-color)}
-    to {background-color: var(--text-color)}
+    background-color: var(--hover-states); 
 }
 /* Making the text ontop of the banner to be easily read by the user */
 .banner{
@@ -343,19 +338,18 @@ footer{
      padding-bottom: 15px;
      padding-left: 55px;
      padding-right: 55px;
-     border-radius: 55px;
+     border-radius: 85px;
      color: var(--primary-color);
  }
  /* Making the "download" interactive for the user */
  .outside-downlaod:hover{
-     background-color: var(--text-color);
+     background-color: var(--secondadry-color);
      animation-name: button-transition;
      animation-duration: 2s;
-     color: var(--primary-color);
     }
     @keyframes button-transition {
        from {background-color: var(--secondadry-color)}
-       to {background-color: var(--text-color)}
+       to {background-color: var(--hover-states)}
      }
  /* making the photography and graphic design heading the same to have consistency */
  .second-heading, .graphic-heading{
@@ -385,7 +379,7 @@ footer{
 }
 /* Setting the background and centering the text */
 .card-body{
-    background-color: var(--secondadry-color);
+    background-color: var(--card-color);
 }
 .card-text{
     color: var(--text-white);
@@ -415,10 +409,11 @@ footer{
  }
  h1.title{
      margin-left: 70px;
+     color: var(--text-color);
  }
  /* making the form lables be consistent with my theme */
  .form-label{
-     color: var(--secondadry-color);
+     color: var(--text-color);
      padding-top: 15px;
      font-weight: 600;
  }
@@ -433,22 +428,21 @@ footer{
     margin-bottom: 50px;
     border: none;
     background-color: var(--secondadry-color);
-    padding-right: 45px;
-    padding-left: 45px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius: 50px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 75px;
     font-size: 1.5rem;
-    color: var(--text-color);
+    color: var(--text-white);
 }
 /* Making the submit button interactive for user engagement */
 .button:hover{
-    background-color: var(--primary-color);
+    background-color: var(--secondadry-color);
     animation-name: grow;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    color: var(--secondadry-color);
 }
 @keyframes grow{
     50% {transform: scale(1.5);}
