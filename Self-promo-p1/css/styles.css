@@ -59,7 +59,7 @@ html{
 	--text-color: #000000;
     --text-white: #ffffff;
     --hover-states: #6b818c;
-    --card-color: #C57B57
+    --card-color: #C57B57;
 	}
  /* removing the underline from the links to allow for proper styling */
 a{
@@ -92,6 +92,8 @@ a{
 .nav-hover{
     color: var(--text-color);
     font-size: 2.5rem;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 .nav-hover:hover{
     color: var(--secondadry-color);
@@ -103,11 +105,12 @@ a{
 .background-color{
     background-color: var(--primary-color);
 }
-.hr{
-    height: 50px;
+hr.hr{
+    height: 11px;
     background-color: #000000;
     border: none;
-    width: 95%;
+    margin-left: 35px;
+    margin-right: 35px;
 }
 /* making my profile picture responsive */
 .profile-pic{
@@ -582,11 +585,14 @@ footer{
  -----------------------------------------------*/
  @media only screen and (min-width: 992px){
 /* ---------------------------
+        Navigation
+----------------------------*/
+
+/* ---------------------------
         Landing page
 ----------------------------*/
     button.welcome:hover{
-        background-color: var(--text-color);
-        color: var(--primary-color);
+        background-color: var(--hover-states);
     }
     /* Growing my image to be an appropriate size on the desktop */
     img.profile-pic.img-fluid{
@@ -677,7 +683,7 @@ footer{
     }
     /* adding a hover to allow for user interactvity */
     .outside-downlaod:hover{
-        background-color: var(--text-color);
+        background-color: var(--hover-states);
     }
     /* using flex to horizontally align items in the banner */
     .banner-about{
