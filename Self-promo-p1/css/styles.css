@@ -79,10 +79,6 @@ a{
 .navbar-light .navbar-nav .nav-link:hover{
     color: var(--secondadry-color);
 } 
-.logo{
-    width: 100%;
-    height: auto;
-}
 .flex-container{
     display: flex;
     justify-content: space-between;
@@ -469,6 +465,9 @@ footer{
     .hello{
         font-size: 4.2rem;
     }
+    .logo{
+        padding-left: 250px;
+    }
     /* making sure the text doesnt overlap my image */
     .welcome{
         margin-left: 45px;
@@ -605,6 +604,11 @@ footer{
 }
 .logo-nav:nth-child(4){
     grid-area: four;
+}
+.logo{
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
 }
 /* ---------------------------
         Landing page
