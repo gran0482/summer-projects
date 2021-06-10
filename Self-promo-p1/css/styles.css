@@ -587,7 +587,25 @@ footer{
 /* ---------------------------
         Navigation
 ----------------------------*/
-
+.logo-nav{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: 
+    "one two three four";
+}
+.logo-nav:nth-child(1){
+    grid-area: one;
+}
+.logo-nav:nth-child(2){
+    grid-area: two;
+}
+.logo-nav:nth-child(3){
+    grid-area: three;
+}
+.logo-nav:nth-child(4){
+    grid-area: four;
+}
 /* ---------------------------
         Landing page
 ----------------------------*/
