@@ -101,6 +101,11 @@ hr.hr{
     margin-left: 30px;
     margin-right: 30px;
 }
+/* Shifting the links to the right to allow for a balanced footer */
+.footer-nav{
+    display: flex;
+    justify-content: flex-end;
+}
  /*--------------------------------------------
              Mobile Styles - Landing
  -----------------------------------------------*/
@@ -224,8 +229,6 @@ hr.hr{
 /* Making the text ontop of the banner to be easily read by the user */
 .banner{
     height: 300px;
-    background-color: var(--primary-color);
-    color: var(--text-color);
 }
 /* Making sure the text stays inside the banner when resizing to tablet and desktop */
 .banner-text{
@@ -234,6 +237,13 @@ hr.hr{
     padding-top: 50px;
     text-align: center;
     margin: 30px;
+}
+.parallax{
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /* Creating a favourites section to show the user a few examples of my work before they go to the about page */
 .favourites{
@@ -251,7 +261,7 @@ hr.hr{
     opacity: 35%;
     position: relative;
     bottom: 245px;
-}
+} 
 /* Making the images the same height and width as each of them are designed at different widths and height */
 .home-favourites{
     height: 274px;
@@ -262,16 +272,6 @@ hr.hr{
 /* Making sure that there is space below to avoid the images touching the footer */
 .favorite-section{
     margin-bottom: 75px;
-}
-/* Footer styles for all the pages */
-footer{
-    background-color: var(--primary-color);
-    height: 150px;
-}
-/* Shifting the links to the right to allow for a balanced footer */
-.footer-nav{
-    display: flex;
-    justify-content: flex-end;
 }
 /* making the footer nav be consistent with my colour scheme */
 .link-color{
@@ -549,7 +549,10 @@ footer{
         margin-right: 30px;
     }
     p.banner-text{
-        padding-bottom: 20px;
+        padding-bottom: 50px;
+    }
+    .bttn-image{
+        height: 190px;
     }
      /* ------------------
         About Page
@@ -681,9 +684,12 @@ footer{
     }
     /* ensuring my banner text looks appropriate in desktop styles */
     .banner-text{
-        padding-top: 75px;
         margin-left: 200px;
         margin-right: 200px;
+        margin-bottom: 75px;
+    }
+    .bttn-image{
+        height: 175px;
     }
  /* ---------------------------
         About Me 
