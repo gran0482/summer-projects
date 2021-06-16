@@ -159,6 +159,7 @@ hr.hr{
 .logo{
     margin-left: 95px; 
     width: 65%;
+    padding-bottom: 10px;
 }
 /* making the helicopter image responsive through all the different states */
 .helicopter-image{
@@ -476,6 +477,7 @@ hr.hr{
     }
     .logo{
         padding-left: 250px;
+        padding-bottom: 20px;
     }
     /* making sure the text doesnt overlap my image */
     .welcome{
@@ -629,9 +631,12 @@ hr.hr{
     width: 225px;
     height: auto;
     padding-left: 10px;
+    padding-bottom: 2px;
 }
 .nav-hover{
-    margin-left: 35px;
+    display: flex;
+    justify-content: flex-start;
+    position: sticky;
 }
 /* ---------------------------
         Landing page
